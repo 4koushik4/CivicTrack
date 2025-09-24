@@ -107,7 +107,7 @@
     "vite": "^6.2.2",
     "vitest": "^3.1.4"
   }
-}
+
 {
   "type": "module",
   "scripts": {
