@@ -109,9 +109,9 @@
   },
 "scripts": {
   "dev": "vite",
-  "build": "vite build && npm run build:functions",
-  "build:functions": "esbuild netlify/functions/**/*.js --outdir=netlify/functions --bundle --platform=node",
-  "serve": "netlify dev",
+  "build:client": "vite build --config vite.config.client.js",
+  "build:server": "vite build --config vite.config.server.js",
+  "build": "npm run build:client && npm run build:server",
   "start": "node dist/server/node-build.mjs"
 }
 }
